@@ -9,19 +9,25 @@
 		<div class="site-wrapper">
 		<h1>Guessing Game</h1>
 			<div class='main-box'>
-				<input type="text" placeholder='A Number Between 1 and 100' class='form-control'/>
+				<input id="guessfield" type="text" placeholder='A Number Between 1 and 100' class='form-control'>
 			</div>
+			<p id='1'></p>
+			<p id='response'></p>
+			<p id="remainGuess">5 guesses remaining</p>
 
 			<div class='buttons'>
-				<button type='button' class="btn btn-primary"> Guess </button>
+				<button id='guess' type='button' class="btn btn-primary">Guess</button>
 			</div>
-			<div class'buttons'>
-				<button type='button' class="btn btn-success">Hint</button>
+			<div class='buttons'>
+				<button id='hint' type='button' class="btn btn-success">Hint</button>
 			</div>
-			<div class'buttons'>
-				<button type='button' class="btn btn-warning">Restart</button>
+						<p id="hinttext">You only get 1 hint</p>
+			<div class='buttons'>
+				<button id='restart' type='button' class="btn btn-warning">Restart</button>
 			</div>
+			<p id="prevGuess"></p>
 		</div>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src='guessingGame.js'></script>
 	</body>
-	
 </html>
